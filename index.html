@@ -21,8 +21,8 @@
         </svg>
       </button>
       <nav class="mobile-menu-drawer">
-        <a class="mobile-nav-link" href="index.html">Studio</a>
-        <a class="mobile-nav-link" href="portfolio.html">Portfolio</a>
+        <a class="mobile-nav-link" href="./index.html">Studio</a>
+        <a class="mobile-nav-link" href="./portofolio.html">Portfolio</a>
         <a class="mobile-nav-link" href="#">Contacts</a>
       </nav>
       <div class="flex-container-mobile">
@@ -150,31 +150,60 @@
           <h2 class="servicies">What we do</h2>
           <ul class="items-servicies">
             <li class="item-photo-servicies">
-              <img
+              <picture>
+                <!-- Desktop -->
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                  ./images/write-d.jpg 1x,
+                  ./images/write-d@2x.jpg 2x
+                ">
+                <img
                 src="./images/write.jpg"
                 alt="A person has to task of writing"
                 width="370"
               />
+              </picture>
               <div class="tranzition-servicies">
               <p>DESKTOP APPS</p>
               </div>
             </li>
             <li class="item-photo-servicies">
-              <img
-              src="./images/call.jpg"
-              alt="A person has to task of calling"
-              width="370"
-            />
+              <picture>
+                <!-- Desktop -->
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                  ./images/call-d.jpg 1x,
+                  ./images/call-d@2x.jpg 2x
+                ">
+                <img
+                src="./images/call.jpg"
+                alt="A person has to task of calling"
+                width="370"
+              />
+              </picture>
+             
               <div class="tranzition-servicies">
               <p>Mobile APPS</p>
               </div>
             </li>
             <li class="item-photo-servicies">
-              <img
+              <picture>
+                <!-- Desktop -->
+                <source 
+                media="(min-width: 1158px)"
+                srcset="
+                  ./images/color-d.jpg 1x,
+                  ./images/color-d@2x.jpg 2x
+                ">
+                <img
                 src="./images/color.jpg"
                 alt="A person has to task of coloring"
                 width="370"
               />
+              </picture>
+             
               <div class="tranzition-servicies">
                 <p>DESIGN SOLUTIONS</p>
               </div>
@@ -189,12 +218,31 @@
           <div class="card-team">
             <ul class="items-team">
               <li>
-                <img
-                  src="./images/chris.jpg"
-                  alt="He has brown hair and wears eyeglasses."
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/chris-d.jpg 1x,
+                    ./images/chris-d@2x 2x
+                  ">
+                <!-- Tablet -->
+                <source
+                media="(min-width:768px)"
+                srcset="
+                    ./images/chris-t.jpg 1x,
+                    ./images/chris-t@2x 2x
+                  "
+                >
+                <!-- Mobile -->
+                <source
+                srcset="
+                      ./images/chris-m.jpg 1x,
+                      ./images/chris-m@2x 2x">
+                      <img src="./images/chris.jpg
+                      " alt="Photo with Chris">
+                </picture>
+            
                 <div class="footer-card">
                   <h3 class="title-name">Christopher Walker</h3>
                   <p class="training">Product Designer</p>
@@ -219,12 +267,36 @@
                 </ul>
               </li>
               <li>
-                <img
+                 <picture>
+                  <!-- Desktop -->
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/kylie-d.jpg 1x,
+                    ./images/kylie-d@2x 2x
+                  ">
+                <!-- Tablet -->
+                <source
+                media="(min-width:768px)"
+                srcset="
+                    ./images/kylie-t.jpg 1x,
+                    ./images/kylie-t@2x 2x
+                  "
+                >
+                <!-- Mobile -->
+                <source
+                srcset="
+                      ./images/kylie-m.jpg 1x,
+                      ./images/kylie-m@2x 2x">
+
+                      <img
                   src="./images/kylie.jpg"
                   alt="She has blond hair and wears eyeglasses."
                   width="270"
                   height="260"
-                />
+                /> 
+                </picture>
+                
                 <div class="footer-card">
                   <h3 class="title-name">Kylie Evans</h3>
                   <p class="training">Frontend Developer</p>
@@ -249,12 +321,36 @@
                 </ul>
               </li>
               <li>
-                <img
-                  src="./images/ryan.jpg"
-                  alt="He has light brown hair."
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/ryan-d.jpg 1x,
+                    ./images/ryan-d@2x 2x
+                  ">
+                <!-- Tablet -->
+                <source
+                media="(min-width:768px)"
+                srcset="
+                    ./images/ryan-t.jpg 1x,
+                    ./images/ryan-t@2x 2x
+                  "
+                >
+                <!-- Mobile -->
+                <source
+                srcset="
+                      ./images/ryan-m.jpg 1x,
+                      ./images/ryan-m@2x 2x">
+
+                      <img
+                      src="./images/ryan.jpg"
+                      alt="He has light brown hair."
+                      width="270"
+                      height="260"
+                    />
+                </picture>
+                
                 <div class="footer-card">
                   <h3 class="title-name">Ryan Harris</h3>
                   <p class="training">Marketing</p>
@@ -279,13 +375,37 @@
                 </ul>
               </li>
               <li>
-                <img
-                  src="./images/tyler.jpg"
-                  alt="He has black hair and wears
-              eyeglasses."
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source 
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/tyler-d.jpg 1x,
+                    ./images/tyler-d@2x 2x
+                  ">
+                <!-- Tablet -->
+                <source
+                media="(min-width:768px)"
+                srcset="
+                    ./images/tyler-t.jpg 1x,
+                    ./images/tyler-t@2x 2x
+                  "
+                >
+                <!-- Mobile -->
+                <source
+                srcset="
+                      ./images/tyler-m.jpg 1x,
+                      ./images/tyler-m@2x 2x">
+
+                      <img
+                      src="./images/tyler.jpg"
+                      alt="He has black hair and wears
+                  eyeglasses."
+                      width="270"
+                      height="260"
+                    />
+                </picture>
+               
                 <div class="footer-card">
                   <h3 class="title-name">Tyler Moore</h3>
                   <p class="training">UI Designer</p>
@@ -320,33 +440,33 @@
         <ul class="items-client">
           <li class="item-icon-client">
             <a href="#" target="_blank" class="link-client">
-              <svg class="icon-client"><use xlink:href="./symbol-defs.svg#icon-yaco"></use></svg>
+              <svg class="icon-client" width="106" height="60"><use xlink:href="./symbol-defs.svg#icon-yaco"></use></svg>
             </a>
           </li>
           <li class="item-icon-client">
             <a href="#" target="_blank" class="link-client">    
-              <svg class="icon-client"><use xlink:href="./symbol-defs.svg#icon-company-tagline-here"></use></svg>
+              <svg class="icon-client" width="106" height="60"><use xlink:href="./symbol-defs.svg#icon-company-tagline-here"></use></svg>
             </a>
           </li>
           <li class="item-icon-client">
             <a href="#" target="_blank" class="link-client">
-              <svg class="icon-client"><use xlink:href="./symbol-defs.svg#icon-company"></use></svg>
+              <svg class="icon-client" width="106" height="60"><use xlink:href="./symbol-defs.svg#icon-company"></use></svg>
             </a>
           </li>
           <li class="item-icon-client">
             <a href="#" target="_blank" class="link-client">
-              <svg class="icon-client"><use xlink:href="./symbol-defs.svg#icon-foster-petres"></use></svg>
+              <svg class="icon-client" width="106" height="60"><use xlink:href="./symbol-defs.svg#icon-foster-petres"></use></svg>
             </a>
           </li>
           <li class="item-icon-client">
             <a href="#" target="_blank" class="link-client">
-              <svg class="icon-client"><use xlink:href="./symbol-defs.svg#icon-brand"></use></svg>
+              <svg class="icon-client" width="106" height="60"><use xlink:href="./symbol-defs.svg#icon-brand"></use></svg>
 
             </a>
           </li>
           <li class="item-icon-client">
             <a href="#" target="_blank" class="link-client">
-              <svg class="icon-client"><use xlink:href="./symbol-defs.svg#icon-company-tagline"></use></svg>
+              <svg class="icon-client" width="106" height="60"><use xlink:href="./symbol-defs.svg#icon-company-tagline"></use></svg>
             </a>
           </li>
         </ul>

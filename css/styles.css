@@ -110,6 +110,8 @@ main {
   top: 0;
   left: 0;
   overflow: auto;
+  /* transition: opacity 0.1s;
+  opacity: 0; */
 }
 .js-menu-container.is-open {
   background-color: #fff;
@@ -428,8 +430,8 @@ main {
 
 .modal-content {
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--modal-content-bg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -579,17 +581,17 @@ main {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
 .terms-and-conditions input {
-  margin: 0 7px 0 0;
+  margin: 0 8px 0 0;
 }
 .title-terms {
   color: var(--title-terms);
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
@@ -604,7 +606,7 @@ main {
   width: 16px;
   height: 15px;
   top: calc(50% - 7.5px);
-  left: 57px;
+  left: 0;
 }
 .terms-and-conditions input:not(:checked) {
   visibility: hidden;
@@ -899,6 +901,9 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
+}
+.icon-client {
+  padding: 16px 52px;
 }
 /* .item-icon-client:not(:last-child) {
   margin-right: 30px;
@@ -1395,6 +1400,9 @@ main {
   .items-client .item-icon-client {
     max-width: calc((100% - 90px) / 3);
   }
+  .icon-client {
+    padding: 16px 60px;
+  }
 }
 /* Rensponsive Desktop */
 @media screen and (min-width: 1200px) {
@@ -1425,6 +1433,20 @@ main {
     letter-spacing: 0.165rem;
     text-transform: uppercase;
     width: 696px;
+  }
+  .modal-content {
+    position: relative;
+    width: 528px;
+    height: 581px;
+  }
+  .title-terms {
+    font-size: 14px;
+  }
+  .terms-and-conditions {
+    justify-content: center;
+  }
+  .icon-check {
+    left: 57px;
   }
   .container-targets {
     flex-direction: row;
@@ -1467,5 +1489,8 @@ main {
   }
   .items-client .item-icon-client {
     max-width: calc((100% - 150px) / 6);
+  }
+  .icon-client {
+    padding: 16px 32px;
   }
 }
