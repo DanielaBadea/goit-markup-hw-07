@@ -1487,6 +1487,9 @@ main {
   .section-targets {
     padding: 94px 0;
   }
+  .container-targets {
+    max-width: 1170px;
+  }
   .items-targets {
     max-width: 1200px;
     width: 100vw;
