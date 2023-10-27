@@ -431,6 +431,9 @@ main {
         animation: fadeIn 5s forwards; */
   /* varainta 4 */
   transition: opacity 0.15s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* @keyframes fadeIn {
 
@@ -914,8 +917,10 @@ main {
 .items-client {
   list-style: none;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .icon-client {
@@ -924,9 +929,9 @@ main {
 /* .item-icon-client:not(:last-child) {
   margin-right: 30px;
 } */
-.items-client .item-icon-client {
+/* .items-client .item-icon-client {
   max-width: calc((100% - 60px) / 2);
-}
+} */
 .link-client {
   display: flex;
   justify-content: center;
