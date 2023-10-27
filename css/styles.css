@@ -906,6 +906,7 @@ main {
 }
 .container-client {
   /* max-width: 1200px; */
+  width: 100vw;
   width: 450px;
   padding: 94px 0px 94px 0px;
   margin: 0 auto;
