@@ -888,6 +888,7 @@ main {
 }
 /* Regular Customers */
 .section-client {
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
 }
