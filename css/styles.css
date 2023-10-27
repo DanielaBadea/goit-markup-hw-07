@@ -959,7 +959,7 @@ main {
   /* max-width: 1200px; */
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -1045,6 +1045,7 @@ main {
 .footer-page-flex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 60px;
   padding: 60px 0 60px 0;
@@ -1439,7 +1440,7 @@ main {
   .footer-page-flex {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 }
 /* Rensponsive Desktop */
@@ -1537,9 +1538,11 @@ main {
     max-width: 1200px;
     width: 100vw;
   }
+  .container-footer {
+    max-width: 1200px;
+  }
   .footer-page-flex {
     flex-wrap: nowrap;
-    justify-content: space-between;
   }
   .container-icon-footer {
     display: flex;
